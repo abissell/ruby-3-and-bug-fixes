@@ -112,6 +112,14 @@ RSpec.describe HierarchicalConfig do
     end
   end
 
+  context 'with prop_ending_with_question_mark.yml' do
+    let(:file){'prop_ending_with_question_mark'}
+
+    it 'raises the invalid property error from sorbet' do
+      expect{config}.to raise_error(ArgumentError, /Invalid prop name in HierarchicalConfig/)
+    end
+  end
+
   context 'with environment_variable_tests.yml' do
     let(:file){'environment_variable_tests'}
 
