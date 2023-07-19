@@ -16,6 +16,10 @@ defaults:
     - one
     - two
     - three
+  key_allcaps_values_array_hash:
+    ALLCAPS:
+      - arr0: true
+        arr1: one
 
 defaults[test,cucumber,development]:
   cache_classes: false

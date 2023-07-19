@@ -82,6 +82,11 @@ RSpec.describe HierarchicalConfig do
               {key1: 'value1b', key2: 'value2b'},
             ],
             array_of_strings: %w[one two three],
+            key_allcaps_values_array_hash: {
+              ALLCAPS: [
+                {arr0: true, arr1: 'one'},
+              ],
+            },
           )
         end
       end
