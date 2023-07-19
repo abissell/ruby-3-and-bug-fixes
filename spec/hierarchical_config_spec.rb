@@ -82,9 +82,30 @@ RSpec.describe HierarchicalConfig do
               {key1: 'value1b', key2: 'value2b'},
             ],
             array_of_strings: %w[one two three],
-            key_allcaps_values_array_hash: {
-              ALLCAPS: [
+            strangekey_hash_of_arrays: {
+              ALLCAPSZERO: [
                 {arr0: true, arr1: 'one'},
+              ],
+              ALLCAPSONE: [
+                {arr0: false, arr2: 'two'},
+              ],
+              ALL_CAPS_TWO: [
+                {arr0: true, arr3: 'three'},
+              ],
+              CamelCase: [
+                {arr0: false, arr4: 'four'},
+              ],
+              dromedaryCase: [
+                {arr0: true, arr5: 'five'},
+              ],
+              snake_case: [
+                {arr0: false, arr6: 'six'},
+              ],
+              Camel_Snake: [
+                {arr0: true, arr7: 'seven'},
+              ],
+              dromedary_Snake: [
+                {arr0: false, arr8: 'eight'},
               ],
             },
           )
